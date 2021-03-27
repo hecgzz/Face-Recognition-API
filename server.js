@@ -8,11 +8,13 @@ const singin = require('./controllers/singin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
+
 const db = knex({
     client: 'pg',
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-        rejectUnauthorized: false
+    conection: {
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
     }
 });
 
