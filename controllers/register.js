@@ -1,5 +1,3 @@
-const { json } = require("express");
-
 const handleRegister = (req, res, bcrypt, db)=>{
     const {email, name, password} = req.body;
     if(!email || !name || !password){
@@ -28,7 +26,7 @@ const handleRegister = (req, res, bcrypt, db)=>{
         .then(trx.commit)
         .catch(trx.rollback)
     })
-    .catch(err => res.status(400).json('unable to register  '))
+    .catch(err => res.status(400).json('unable to register'))
 }
 
 module.exports = {
