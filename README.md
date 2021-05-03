@@ -19,6 +19,8 @@ Puedes ver el Frontend/Aplicación React [aquí](https://github.com/hecgzz/Face-
 
 ![alt text](https://github.com/hecgzz/face-recognition/blob/main/public/Screen2.png "main-page")
 
+![alt text](https://github.com/hecgzz/face-recognition/blob/main/public/Screen3.png "face-recognition")
+
 ### Technologies / Tecnologías
 + Node.js
 + Javascript
